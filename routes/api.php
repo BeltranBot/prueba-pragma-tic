@@ -48,3 +48,11 @@ Route::post('operators', 'API\OperatorController@store');
 Route::delete('operators/{operator}', 'API\OperatorController@destroy');
 Route::put('operators/{operator}', 'API\OperatorController@update');
 Route::put('operators/{operator}/restore', 'API\OperatorController@restore');
+
+// Pricings
+Route::get('pricings', 'API\PricingController@get');
+Route::get('pricings/{pricing}', 'API\PricingController@getPricing');
+Route::post('pricings', 'API\PricingController@store');
+Route::delete('pricings/{pricing}', 'API\PricingController@destroy');
+Route::put('pricings/{pricing}', 'API\PricingController@update');
+Route::put('pricings/{pricing}/restore', 'API\PricingController@restore');

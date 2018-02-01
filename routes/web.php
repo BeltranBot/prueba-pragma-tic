@@ -21,3 +21,5 @@ Route::get('clients', 'ClientController@index');
 Route::get('printers', 'PrinterController@index');
 Route::get('papers', 'PaperController@index');
 Route::get('operators', 'OperatorController@index');
+Route::get('pricings', 'PricingController@index');
+Route::get('pricings/{pricing}', 'PricingController@show');

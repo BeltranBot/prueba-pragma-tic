@@ -50,6 +50,6 @@ $factory->define(App\Paper::class, function (Faker $faker) {
 $factory->define(App\Operator::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
-        'hour_cost' => $faker->numberBetween(10000, 100000),
+        'hour_cost' => $faker->numberBetween(10000, 50000),
     ];
 });

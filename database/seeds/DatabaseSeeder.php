@@ -16,5 +16,6 @@ class DatabaseSeeder extends Seeder
         $this->call(PrinterTableSeeder::class);
         $this->call(PaperTableSeeder::class);
         $this->call(OperatorTableSeeder::class);
+        $this->call(PrintingTypesTableSeeder::class);
     }
 }

@@ -15,7 +15,7 @@
         <li><a href="{{url('printers')}}">Impresoras</a></li>
         <li><a href="{{url('papers')}}">Papeles</a></li>
         <li><a href="{{url('operators')}}">Operadores</a></li>
-        <li><a href="{{url('pricing')}}">Cotización</a></li>
+        <li><a href="{{url('pricings')}}">Cotizaciones</a></li>
       </ul>
     </div>
   </div>
