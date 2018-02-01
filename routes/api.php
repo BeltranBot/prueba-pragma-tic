@@ -32,3 +32,11 @@ Route::post('printers', 'API\PrinterController@store');
 Route::delete('printers/{printer}', 'API\PrinterController@destroy');
 Route::put('printers/{printer}', 'API\PrinterController@update');
 Route::put('printers/{printer}/restore', 'API\PrinterController@restore');
+
+// Paper
+Route::get('papers', 'API\PaperController@get');
+Route::get('papers/{paper}', 'API\PaperController@getPaper');
+Route::post('papers', 'API\PaperController@store');
+Route::delete('papers/{paper}', 'API\PaperController@destroy');
+Route::put('papers/{paper}', 'API\PaperController@update');
+Route::put('papers/{paper}/restore', 'API\PaperController@restore');

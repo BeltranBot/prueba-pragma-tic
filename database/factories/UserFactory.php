@@ -40,3 +40,9 @@ $factory->define(App\Printer::class, function (Faker $faker) {
         'printing_speed' => $faker->randomFloat(null, 60.00, 200.00),
     ];
 });
+
+$factory->define(App\Paper::class, function (Faker $faker) {
+    return [
+        'name' => $faker->username,
+    ];
+});
