@@ -17,9 +17,18 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
+// Client
 Route::get('clients', 'API\ClientController@get');
 Route::get('clients/{client}', 'API\ClientController@getClient');
 Route::post('clients', 'API\ClientController@store');
 Route::delete('clients/{client}', 'API\ClientController@destroy');
 Route::put('clients/{client}', 'API\ClientController@update');
 Route::put('clients/{client}/restore', 'API\ClientController@restore');
+
+// Printer
+Route::get('printers', 'API\PrinterController@get');
+Route::get('printers/{printer}', 'API\PrinterController@getPrinter');
+Route::post('printers', 'API\PrinterController@store');
+Route::delete('printers/{printer}', 'API\PrinterController@destroy');
+Route::put('printers/{printer}', 'API\PrinterController@update');
+Route::put('printers/{printer}/restore', 'API\PrinterController@restore');

@@ -17,9 +17,10 @@ class CreatePrintersTable extends Migration
             $table->increments('id');
             $table->string('model');
             $table->decimal('prep_time', 7, 2);
-            $table->decimal('width', 7, 2);
+            $table->decimal('max_width', 7, 2);
             $table->decimal('printing_speed', 7, 2);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

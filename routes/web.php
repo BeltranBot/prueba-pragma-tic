@@ -18,3 +18,4 @@ Route::get('/', function () {
 
 
 Route::get('clients', 'ClientController@index');
+Route::get('printers', 'PrinterController@index');

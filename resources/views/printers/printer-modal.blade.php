@@ -1,7 +1,7 @@
 <div class="contianer">
 <div
   class="modal fade"
-  id="modalCreateNewClient"
+  id="modalCreatePrinter"
   role="dialog"
   data-backdrop="static"
   data-keyboard="false"
@@ -20,79 +20,72 @@
         <h4
           class="modal-title"
           id="modal-title">
-          Crear Nuevo Cliente
+          Crear Nueva Impresora
         </h4>
       </div>
 
-      <input type="hidden" name="clientId" id="modalHiddenId">
+      <input type="hidden" name="printerId" id="modalHiddenId">
       <div class="modal-body">
         <form
-          id="formCreateNewClient"
+          id="formCreatePrinter"
           class="form-horizontal"
           role="form">
 
           <div class="form-group">
             <label class="control-label col-sm-4">
-              NIT *
+              Modelo *
             </label>
             <div class="col-sm-8">
-              <input type="number" class="form-control has-error" name="nit"
-                min=0
-                placeholder="NIT"
+              <input type="text" class="form-control" name="model"
+                placeholder="Modelo"
                 required>
             </div>
           </div>
         
           <div class="form-group">
             <label class="control-label col-sm-4">
-              Nombre Cliente *
+              Tiempo de Preparación (horas) *
             </label>
             <div class="col-sm-8">
-              <input type="text" class="form-control" name="name"
-                placeholder="Nombre Cliente"
+              <input type="number" class="form-control" name="prep_time"
+                min=0.01
+                step=0.01
+                placeholder="Tiempo de Preparación"
                 required>
             </div>
           </div>
 
           <div class="form-group">
             <label class="control-label col-sm-4">
-              Email *
+              Ancho Máximo Rodillo (pulgadas) *
             </label>
             <div class="col-sm-8">
-              <input type="email" class="form-control" name="email"
-                placeholder="example@example.com"
+              <input type="number" class="form-control" name="max_width"
+                min=0.0001
+                step=0.0001
+                placeholder="Ancho Máximo Rodillo"
                 required>
             </div>
           </div>
 
           <div class="form-group">
             <label class="control-label col-sm-4">
-              Teléfono *
+              Velocidad de Impresión (pulgadas/min) *
             </label>
             <div class="col-sm-8">
-              <input type="number" class="form-control" name="phone"
-                min=0
-                placeholder="Teléfono"
-                required>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="control-label col-sm-4">
-              Dirección *
-            </label>
-            <div class="col-sm-8">
-              <input type="text" class="form-control" name="address"
-                placeholder="Dirección"
+              <input type="number" class="form-control" name="printing_speed"
+                min=0.0001
+                step=0.0001
+                placeholder="Velocidad de Impresión"
                 required>
             </div>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button class="btn btn-default" id="btnModalCreateNewClientCancel">Cancelar</button>
-        <button class="btn btn-primary" id="btnModalCreateNewClientSubmit">Registrar</button>
-        <button class="btn btn-info" id="btnModalUpdateClientSubmit">Actualizar</button>
+        <button class="btn btn-default" id="btnModalCreatePrinterCancel">Cancelar</button>
+        <button class="btn btn-primary" id="btnModalCreatePrinterSubmit">Registrar</button>
+        <button class="btn btn-info" id="btnModalUpdatePrinterSubmit">Actualizar</button>
       </div>
     </div>
   </div>

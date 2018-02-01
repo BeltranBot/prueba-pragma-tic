@@ -31,3 +31,12 @@ $factory->define(App\Client::class, function (Faker $faker) {
         'email' => $faker->email,
     ];
 });
+
+$factory->define(App\Printer::class, function (Faker $faker) {
+    return [
+        'model' => $faker->username,
+        'prep_time' => $faker->randomFloat(null, 0.16, 1.00),
+        'max_width' => $faker->randomFloat(null, 2.00, 30.00),
+        'printing_speed' => $faker->randomFloat(null, 60.00, 200.00),
+    ];
+});

@@ -13,7 +13,8 @@
       <ul>
         <li><a href="{{url('clients')}}">Clientes</a></li>
         <li><a href="{{url('printers')}}">Impresoras</a></li>
-        <li><a href="{{url('operators')}}">Config. Operador</a></li>
+        <li><a href="{{url('papers')}}">Papeles</a></li>
+        <li><a href="{{url('operators')}}">Operadores</a></li>
         <li><a href="{{url('pricing')}}">Cotización</a></li>
       </ul>
     </div>
