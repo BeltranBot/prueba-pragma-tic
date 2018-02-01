@@ -40,3 +40,11 @@ Route::post('papers', 'API\PaperController@store');
 Route::delete('papers/{paper}', 'API\PaperController@destroy');
 Route::put('papers/{paper}', 'API\PaperController@update');
 Route::put('papers/{paper}/restore', 'API\PaperController@restore');
+
+// Operators
+Route::get('operators', 'API\OperatorController@get');
+Route::get('operators/{operator}', 'API\OperatorController@getOperator');
+Route::post('operators', 'API\OperatorController@store');
+Route::delete('operators/{operator}', 'API\OperatorController@destroy');
+Route::put('operators/{operator}', 'API\OperatorController@update');
+Route::put('operators/{operator}/restore', 'API\OperatorController@restore');
